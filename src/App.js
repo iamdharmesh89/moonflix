@@ -9,9 +9,12 @@ import Liked from './pages/Liked';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import Player from './components/Player';
+import store from './redux/stors';
+import { Provider } from 'react-redux';
 
-function App() {
+function App() { 
   return (
+    <Provider store={store}>
     <Fragment>
       <Router>
         <Routes>
@@ -25,6 +28,7 @@ function App() {
         </Routes>
       </Router>
     </Fragment>
+    </Provider>
   );
 }
 

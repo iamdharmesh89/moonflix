@@ -6,6 +6,8 @@ import {
   AiOutlinePlusCircle,
   AiOutlinePlayCircle,
 } from "react-icons/ai";
+import { useDispatch } from "react-redux";
+import { addElement } from "../../redux/actions";
 import { BiDislike } from "react-icons/bi";
 import { AiOutlineDoubleLeft, AiOutlineDoubleRight } from "react-icons/ai";
 import useSmoothHorizontalScroll from "use-smooth-horizontal-scroll";
@@ -14,10 +16,9 @@ import { useNavigate } from "react-router-dom";
 const MovieAdd=createContext();
 const image_url = "https://image.tmdb.org/t/p/w500/";
 const TvTopRated = (props) => {
+  const dispatch = useDispatch();
   const [data, setData] = useState([]);
-  const [like,setLike] = useState([{title:"",image:"",des:""}])
   const navigate = useNavigate();
-  console.log(like);
   const moviesData = async () => {
     let res = await fetch(
       `https://api.themoviedb.org/3/tv/top_rated?api_key=47cff2bc9ba543e2c1ea46e263f05d97&with_genres=${props.show}`
@@ -42,7 +43,15 @@ const TvTopRated = (props) => {
                 <div className="icons">
                   <AiOutlineLike />
                   <BiDislike />
-                  <AiOutlinePlusCircle onClick={()=>setLike([...like,{ title:{movie: movie.title}, image: {  poster_path: movie.poster_path }, des:{ description: movie.overview} }] )} />
+                  <AiOutlinePlusCircle
+                    onClick={() =>
+                      dispatch(addElement({
+                        title: { movie: movie.title },
+                        image: { poster_path: movie.poster_path },
+                        des: { description: movie.overview }
+                      }))
+                    }
+                  />
                   <AiOutlinePlayCircle onClick={()=>navigate("/player", { state: { id: movie.id } })}/>
                 </div>
                 <h5>{movie?.overview}</h5>

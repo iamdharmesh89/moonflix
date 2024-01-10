@@ -1,10 +1,11 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png"
 import {AiOutlineSearch} from 'react-icons/ai'
 import styled from "styled-components";
 
 const Navbar = () => {
+
   return (
         <Container>
 
@@ -18,8 +19,7 @@ const Navbar = () => {
     <div className="second">
 
     <div className="search">
-
-        <input type="text" placeholder="  search..." /><AiOutlineSearch/>
+        <input type="text"  placeholder="  search..." /><AiOutlineSearch/>
     </div>
     </div>
     <div className="third">

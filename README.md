@@ -67,4 +67,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
+## About MoonFlix
+
+Moonflix is a clone of netflix where user can login with there email and watch there favourite movies trailers with API response and they can add the movie in List
+
+### Login Page
+
+![image](https://github.com/iamdharmesh89/moonflix/assets/96813180/c00360cb-171c-4bc0-8b77-b5a54a0f8d16)
+
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -75,4 +75,30 @@ Moonflix is a clone of netflix where user can login with there email and watch t
 
 ![image](https://github.com/iamdharmesh89/moonflix/assets/96813180/c00360cb-171c-4bc0-8b77-b5a54a0f8d16)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### SignUp Page
+
+![image](https://github.com/iamdharmesh89/moonflix/assets/96813180/c86a99d7-023f-4a54-8419-1b07026133e8)
+
+### Home Page
+
+![image](https://github.com/iamdharmesh89/moonflix/assets/96813180/12738cd9-fd18-490f-9911-94770d8e8453)
+
+### Movie Categories
+
+![image](https://github.com/iamdharmesh89/moonflix/assets/96813180/4fad0b94-a088-4a6c-bf5f-ffd2bc00e29b)
+
+### Functionality to add movie in List
+
+![image](https://github.com/iamdharmesh89/moonflix/assets/96813180/14b4dcbb-050b-4872-82fb-63681fea68ab)
+
+### Movie related trailers
+
+![image](https://github.com/iamdharmesh89/moonflix/assets/96813180/b1b6c48d-88e9-49fe-bfea-0ea08fbaf100)
+
+### Favourite Movie List
+
+![image](https://github.com/iamdharmesh89/moonflix/assets/96813180/8cdfd7e5-bdf2-417b-a738-d97f096ff3f4)
+
+
+
+
